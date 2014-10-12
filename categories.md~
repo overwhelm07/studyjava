@@ -1,7 +1,11 @@
 ---
 layout: page
-title: 모두 재미있는 프로그래밍 세계에 오신걸 환영합니다.!!!
+title: Python
+header: Posts By Category
+group: navigation
 ---
+
+
 
 #01. Hello, World!
 ##### welcome to programming in Python
@@ -90,3 +94,20 @@ title: 모두 재미있는 프로그래밍 세계에 오신걸 환영합니다.!
     </ul>
   </fieldset>
 </form>
+
+{% include JB/setup %}
+
+<ul class="tag_box inline">
+  {% assign categories_list = site.categories %}
+  {% include JB/categories_list %}
+</ul>
+
+
+{% for category in site.categories %} 
+  <h2 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h2>
+  <ul>
+    {% assign pages_list = category[1] %}  
+    {% include JB/pages_list %}
+  </ul>
+{% endfor %}
+
