@@ -12,6 +12,7 @@ produced by 장재훈(08), 김정헌(10), 문철한(12)
 </iframe>
 
 
+{% include JB/setup %}
 <h2>All Pages</h2>
 <ul>
 {% assign pages_list = site.pages %}
