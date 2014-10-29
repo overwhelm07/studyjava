@@ -10,13 +10,6 @@ group: navigation
 #0@ Variables
 ##### how to store data in Python
 
-<style>
-p {
-    border:1px solid grey;
-    padding:10px;
-    margin:40px;
-}
-</style>
 
 ---
 
@@ -63,15 +56,32 @@ p {
 <br><br>파이썬에선 상당히 다양한 종류의 값을 간단한 형태로 저장하여 사용하는 것이 가능합니다.
 <br><br>아래의 다양한 예시를 보면서 사용 가능한 값에 무엇이 있는지 확인해 봅시다.
 
-| 값의 종류|값의 예시|
-|--------|---------:|
-|int(정수)|1,2,3,4,...|
-|float(실수)|1.0,2.5,3.7,...|
-|str(문자열)|'Hello','Python'|
-|char(문자)|"c","w"|
-|complex(복소수)|3+5j,-1+2j,-2-j,...|
-|Long(큰 정수)|999999999999999|
-
+<table class="tg">
+  <tr>
+    <th class="tg-99b9">값의종류</th>
+    <th class="tg-99b9">값의 예시</th>
+  </tr>
+  <tr>
+    <td class="tg-99b9">int(정수)</td>
+    <td class="tg-99b9">1, 2, 3, 4, ......</td>
+  </tr>
+  <tr>
+    <td class="tg-99b9">float(실수)</td>
+    <td class="tg-99b9">1.0, 2.5, 3.7, .......</td>
+  </tr>
+  <tr>
+    <td class="tg-99b9">str(문자열)</td>
+    <td class="tg-99b9">'Hello', 'Python', ....</td>
+  </tr>
+  <tr>
+    <td class="tg-99b9">char(문자)</td>
+    <td class="tg-99b9">"c", "w", "a", .....</td>
+  </tr>
+  <tr>
+    <td class="tg-99b9">Long(큰정수)</td>
+    <td class="tg-99b9">99999999999, ....</td>
+  </tr>
+</table>
 **복소수의 경우 i가 아니라 j를 사용하는 것에 주의합시다.**
 <br><br>~~i를 쓰면 대문자일 때 L의 소문자와 구분이 어려워서 그러는 게 아닐까 싶습니다.~~<br><br>
 정확한 이유는 j를 쓰는 편이 보다 벡터 표현을 복소 평면으로 옮길 때 자연스러워서 그런 거라고 합니다.<br><br>
